@@ -1,0 +1,150 @@
+/* style.css */
+
+/* 1. Page-wide styling */
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #FFCCDB 0%, #B3DBD0 100%);
+  color: #16453F;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* 2. Headings styling */
+h1, h2, h3 {
+  font-family: "Caveat", serif;
+  color: #6F203E;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* 3. Styling specific elements like links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 4. Styled container cards */
+.card {
+  background-color: #FAF0F5;
+  padding: 1px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.projects {
+  background-color: #FAF0F5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.interests {
+  background-color: #FAF0F5;
+  padding: 1px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.project-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.favorites-section {
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.section-heading {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  color: #5c2438;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.favorites-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+}
+
+.favorite-item {
+  flex: 1;
+  background-color: #FAF0F5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.favorite-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.favorite-item h3 {
+  font-family: "Caveat", cursive;
+  color: #5c2438;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.favorite-item p {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.55;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.item-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-links a {
+  color: #8c5a52;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .projects,
+  .favorites-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .favorite-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
